@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  height: 100vh;
+  font-family: "Roboto";
+  background: linear-gradient(45deg, #6a85b6, #bac8e0);
+  background-repeat: no-repeat;
+}
+.timer {
+}
+.timer__content {
+  border: 4px solid whitesmoke;
+  border-radius: 50px;
+  padding: 2rem;
+  margin-top: 7rem;
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.timer__content-title {
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+.timer__content-counter {
+  font-size: 5rem;
+  color: whitesmoke;
+}
+
+.timer__content-button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  border: none;
+  transition: 0.3s;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+}
+.timer__content-button:hover {
+  scale: 1.1;
+  box-shadow: 1px 8px 8px 7px rgba(34, 60, 80, 0.2);
+}
+.timer__content-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+@media screen and (max-width: 890px) {
+  .timer__content-buttons {
+    flex-direction: column;
+  }
+}
+.container {
+  margin-inline: auto;
+  max-width: 50%;
+}
+.button-start {
+  background-color: #3cb371;
+}
+.button-reset {
+  background-color: #dc143c;
+}
+.button-pause {
+  background-color: inherit;
+}
